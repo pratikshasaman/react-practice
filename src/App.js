@@ -1,8 +1,8 @@
 
-import ExpenseItem from './components/ExpenseItem';
+import ExpenseItem from './components/Expenses/ExpenseItem';
 import './App.css';
-import Card from './components/Card';
-import './components/Card.css';
+import Card from './components/UI/Card';
+import './components/UI/Card.css';
 function App() {
   const expenses =[
     {
