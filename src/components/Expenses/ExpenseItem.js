@@ -1,8 +1,9 @@
-import ExpenseDate from "./ExpenseDate";
-import React, {useState} from 'react';
-import "./ExpenseItem.css";
-import Card from "../UI/Card";
-import "../UI/Card.css";
+import React, { useState } from 'react';
+
+import ExpenseDate from './ExpenseDate';
+import Card from '../UI/Card';
+import './ExpenseItem.css';
+
 function ExpenseItem(props) {
   const[title,setTitle] = useState(props.title);
     // any name to the above array element. firste element is initial title, newly settile name;
@@ -17,7 +18,7 @@ function ExpenseItem(props) {
 
   return (
     <Card className="expense-item">
-      <ExpenseDate dob={props.dob}></ExpenseDate>
+      <ExpenseDate date={props.date}></ExpenseDate>
       <div className="expense-item__description">
         <h2>{title}</h2> 
         <div className="expense-item__price">{props.amount}</div>
