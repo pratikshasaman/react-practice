@@ -1,11 +1,17 @@
 import ExpenseDate from "./ExpenseDate";
+import React, {useState} from 'react';
 import "./ExpenseItem.css";
 import Card from "../UI/Card";
 import "../UI/Card.css";
 function ExpenseItem(props) {
-  let title = props.title;
+  const[title,setTitle] = useState(props.title);
+    // any name to the above array element. firste element is initial title, newly settile name;
+
   const clickHandler = () => {
-    title = "Updated!"; // value is not updating in the DOM.. why? bcos need to use state
+    
+    //title = "Updated!"; // value is not updating in the DOM.. why? bcoz need to use state
+
+    setTitle( "Updated" ); // 
     console.log(title);
   }
 
